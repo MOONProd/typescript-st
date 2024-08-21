@@ -69,7 +69,6 @@ const QuestionCard: React.FC<Props> = ({
           selected={userAnswer === answer}
           value={answer}
           onClick={() => callback(answer)}
-          disabled={!!userAnswer}
         >
           <span dangerouslySetInnerHTML={{ __html: answer }} />
         </AnswerButton>
